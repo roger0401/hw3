@@ -1,6 +1,6 @@
 import Data.Typeable
 import Prelude hiding (catch)
-import Control.Exception
+import Control.Exception   --航海王
 import System.Environment
 import System.IO
 
@@ -19,7 +19,7 @@ insert f a (a':as)
 
 isort2 :: ((Int,Int) -> (Int,Int) -> Bool) -> [(Int,Int)] -> [(Int,Int)]
 isort2 _  []      = []
-isort2 f (a:as) = insert f a (isort2 f as) 
+isort2 f (a:as) = insert f a (isor
 
 comparePair:: (Int,Int) -> (Int,Int) -> Bool
 comparePair (n1,nn1)(n2,nn2) =  (n1 < n2) || (nn1 == nn2 && n1 <= n2)
